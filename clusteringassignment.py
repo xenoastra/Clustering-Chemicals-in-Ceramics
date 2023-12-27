@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from scipy.cluster import hierarchy
 
-data = pd.read_csv(r'D:\desktop 1\Users\Nessie\Documents\coding\Machine Learning\Assignment 4\Chemical Composion of Ceramic.csv')
+data = pd.read_csv(r'../data/Chemical Composion of Ceramic.csv')
 X = data.drop(['Ceramic Name', 'Part'], axis=1)
 
 scaler = StandardScaler()
